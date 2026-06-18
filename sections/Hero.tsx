@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat text-white"
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/images/charger.png')",
       }}
@@ -9,21 +9,20 @@ export default function Hero() {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/75"></div>
 
-      {/* Purple/Cyan Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-purple-900/30"></div>
+      {/* Neon Glow */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-purple-900/30"></div>
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-8 min-h-screen flex items-center">
+      {/* Content */}
+      <div className="relative z-10 flex items-center min-h-screen px-8">
+        <div className="max-w-4xl">
 
-        <div className="max-w-3xl">
-
-          {/* Status Badge */}
-          <div className="inline-flex items-center px-5 py-2 rounded-full border border-cyan-500 text-cyan-400 bg-cyan-500/10 mb-8">
+          {/* Status */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-500 text-cyan-400 bg-cyan-500/10 mb-10">
             ● SYSTEM ONLINE
           </div>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-8xl font-black leading-tight">
+          <h1 className="text-6xl md:text-8xl font-black leading-none">
             LEKKALA
             <br />
             VENKATA
@@ -34,9 +33,9 @@ export default function Hero() {
           </h1>
 
           {/* Role */}
-          <p className="mt-8 text-cyan-400 text-2xl md:text-3xl tracking-[0.4em] uppercase">
+          <h2 className="mt-8 text-cyan-400 text-2xl md:text-3xl tracking-[0.4em] uppercase">
             Data Analyst
-          </p>
+          </h2>
 
           {/* Tagline */}
           <p className="mt-8 text-lg md:text-xl text-gray-300 max-w-xl">
@@ -47,7 +46,6 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-10">
-
             <a
               href="#"
               className="px-8 py-4 rounded-xl bg-cyan-500 text-black font-bold hover:scale-105 transition"
@@ -72,56 +70,9 @@ export default function Hero() {
             >
               LinkedIn
             </a>
-
-          </div>
-
-          {/* Status Cards */}
-          <div className="grid grid-cols-2 gap-4 mt-12 max-w-xl">
-
-            <div className="bg-black/40 backdrop-blur-md border border-cyan-500/20 rounded-2xl p-5">
-              <p className="text-gray-400 text-sm">
-                STATUS
-              </p>
-
-              <p className="text-green-400 font-bold mt-2">
-                AVAILABLE
-              </p>
-            </div>
-
-            <div className="bg-black/40 backdrop-blur-md border border-cyan-500/20 rounded-2xl p-5">
-              <p className="text-gray-400 text-sm">
-                ROLE
-              </p>
-
-              <p className="text-white font-bold mt-2">
-                DATA ANALYST
-              </p>
-            </div>
-
-            <div className="bg-black/40 backdrop-blur-md border border-cyan-500/20 rounded-2xl p-5">
-              <p className="text-gray-400 text-sm">
-                PROJECTS
-              </p>
-
-              <p className="text-cyan-400 font-bold mt-2">
-                2+
-              </p>
-            </div>
-
-            <div className="bg-black/40 backdrop-blur-md border border-cyan-500/20 rounded-2xl p-5">
-              <p className="text-gray-400 text-sm">
-                SKILLS
-              </p>
-
-              <p className="text-purple-400 font-bold mt-2">
-                SQL • Power BI • Python
-              </p>
-            </div>
-
           </div>
 
         </div>
-
       </div>
     </section>
   );
